@@ -1,0 +1,484 @@
+body {
+    margin: 0 auto;
+    font-family: Arial;
+}
+
+.zone {
+    /*padding:30px 50px;*/
+    cursor:pointer;
+    color:white;
+    font-size:1.5em;
+    border-radius:0rem;
+    
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/***********************************************************************
+ *  Nav Bar
+ **********************************************************************/
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 0.7em;
+}
+
+
+
+
+
+.push {
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: #f5f5f6;
+    text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/***********************************************************************
+ *  Cover
+ **********************************************************************/
+.frontmain {
+    /*show heigh: auto*/
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: url(./img/main.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+     font-size: 2.5rem;
+     color:  rgb(253, 254, 255);
+     font-family: georgia;
+
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:  rgb(253, 254, 255);
+
+}
+
+.box,.zone{
+margin:0px;
+}
+/***********************************************************************
+ *  Grid Panel
+ **********************************************************************/
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    grid-gap: 0px;
+}
+
+.box {
+    position: relative;
+    margin: 0px;
+    border: 2px solid white;
+}
+
+.box > img {
+    
+    border-radius: 1rem;
+    
+}
+
+
+
+.box >a> img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/***********************************************************************
+ *  Footer
+ **********************************************************************/
+footer {
+    text-align: center;
+    
+}
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green {
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red {
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: rgb(36,73,203);
+    background: linear-gradient(90deg, rgba(36,73,203,1) 0%, rgba(0,212,255,1) 14%, rgba(36,21,198,1) 76%, rgba(1,17,18,1) 95%, rgba(11,3,39,1) 100%, rgba(9,9,121,1) 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow {
+           background: rgb(36,73,203);
+        background: linear-gradient(90deg, rgba(36,73,203,1) 0%, rgba(0,212,255,0.6313839285714286) 59%, rgba(36,21,198,1) 100%, rgba(1,17,18,1) 100%, rgba(11,3,39,1) 100%, rgba(9,9,121,1) 100%);
+        
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.zone.blue {
+     /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+     /* W3C */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.zone.yellow{
+    font-size: 1em;
+    color: black;
+    text-decoration-color: black;
+}
+.frontmain p span{
+    color: #f1c50e;
+}
+@media only screen and (max-device-width: 600px) and (min-width: 200px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+    
+}
+@media only screen and (max-device-width: 600px) and (min-width: 200px){
+    
+    .vnsintro{
+        font-size: 1.5rem;
+
+    }
+    
+}
+@media only screen and (max-device-width: 600px) and (min-width: 200px) {
+    .frontmain{
+        font-size: 1rem;
+    }
+}
+.waterparklogoimage{
+    margin: 0px;
+}
+.services{
+    display: flex;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    font-family: oswald;
+
+}
+.timing, .chargesheader{
+flex: .25;
+}
+.charges,.uppercharges{
+    flex:.75;
+
+}
+.charges{
+    display: flex;
+    flex-direction: column;
+}
+.timing,.charges{
+    margin:1px;
+    border-radius: 22px;
+    border-color: red;
+    border:3px  solid;
+
+
+}
+.timingbody,.timingheader,.chargesheader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-shadow: currentColor;
+    padding: 1rem;
+    align-items:  center;
+}
+.timingtitle,.daytitle,.nighttitle,.nighttime{
+    padding: none;
+    margin: 0px;
+}
+.daytitle,.daytime{
+    color: white;
+}
+.timingtitle{
+    color: orange;
+}
+.tickettitle{
+    color: red;
+}
+.daytime{
+    margin-top: 0px;
+}
+.uppercharges{
+    display: flex;
+    flex-direction: row;
+}
+.holidaycharges,.otherdaycharges{
+    flex: 1;
+    text-align: center;
+    
+    color: #2ab3ba;
+}
+
+
+
+
+.chargesheader>h1,.holidaychargesheader>.sundayandholiday>h2,.otherdaycharges>h2,.lowercharges{
+    padding:0px;
+    margin:0px;
+}
+
+.otherdaychargesheadertitle>h2{
+    padding: 0px;
+    margin: 0px;
+}
+.welcome ,.timing,.charges,.update{
+
+    backdrop-filter: blur(47px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(28,163,236,0.7);
+    border-radius: 12px;
+    font-size: 5vmin;
+    border: 1vmin solid rgba(255, 255, 255, 0.972);
+
+}
+.update{
+    border: 0px solid black;
+    border-radius: 4vmin;
+}
+.welcome {
+    backdrop-filter: blur(47px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(28,163,236,0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+}
+.amazing{
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(28,163,236,0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.gallery{
+    position: absolute;
+    width: 100vw;
+    background-color: transparent;
+    bottom: 0%;
+    height: 10%;
+    
+    
+    background-image: url(/img/gallerymain1.svg);
+    background-size: cover;
+    
+}
+.gallerytitle,.gallerylogo{
+    flex: 1;
+    text-align:left;
+}
+.gallerylogo{
+    text-align: right;
+}
+
+
+
+.holidaychargesheader,.otherdaychargesheader{
+    color:rgba(28,163,236,2);
+    font-family: oswald;
+}
+.zone.blue.grid-wrapper>.box.zone{
+    background-color:white;
+}
+.charges2{
+    display: flex;
+    flex-direction: column;
+
+}
+.a{
+  flex: 3;
+  
+}
+.b{
+flex: 1;
+
+}
+.c{
+flex: 3;
+}
+.a{
+display: flex;
+flex-direction: row;
+
+}
+.c{
+    display: flex;
+    flex-direction: column;
+}
+.ca{
+    flex:1;
+
+}
+.cb{
+    flex:2;
+}
+
+
+.ab,.aa{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.aaa,.aba{
+    flex: 1
+}
+.aab,.abb{
+    flex: 2;
+}
+.charges2 > *,.a>*,.c>*,.ab>*,.aa>*{
+    border:1px solid black;
+    text-align: center;
+    font-weight: bold;
+
+}
+.charges2{
+    
+    background-color: rgba(28,163,236,0.7);
+}
+.b{
+    color: red;
+}
+.update{
+        position:absolute;
+        top: 0%;
+        margin: 0;
+        width: 100vw;
+        height: 7vh;
+        /* justify-content: center; */
+        text-align: center;
+        overflow: hidden;
+        font-size: 3vmin;
+        /* vertical-align: middle; */
+    }
+    .update{
+        animation: zoom-in-zoom-out 3s 1s infinite ease-out;
+      }
+      
+      @keyframes zoom-in-zoom-out {
+        0% {
+          transform: scale(1, 1);
+        }
+        25% {
+          transform: scale(1.05, 1.05);
+        }
+        50% {
+          transform: scale(1.1, 1.1);
+        }
+        75% {
+          transform: scale(1.05, 1.05);
+        }
+        100% {
+          transform: scale(1, 1);
+        }
+      }
+      .toolbutton{
+        position:absolute;
+        height: 20%;
+        width: 10%;
+       
+      }
+      .left{
+        left: 0;
+        top: 40%;
+      }
+      .right{
+        right: 0;
+        top: 40%;
+      }
+
+      .aboutdetails{
+        text-align: center;
+        color: #5da9f5;
+        font-weight: light;
+        font-family:cursive;
+        font-size: 1rem;
+        margin: 7vmin;
+      }
+
+      .section-title{
+        font-weight: bolder;
+
+      }
+      .about{
+        text-align: center;
+        border: 2px solid #3fafe3;
+        border-radius: 4vmin;
+        margin: 2vmin;
+      }
+      .sectiontitleimage{
+        width: 40%;
+      }
+      .card,.amazing{
+        color: whitesmoke;
+      }
+      .charges{
+        background-color: white;
+      }
+      .ticketnew{
+        width: 100%;
+        height: auto;
+      }
+      .timingheader{
+        flex-direction: row;
+      }
