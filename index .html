@@ -12,7 +12,7 @@
 </head>
 <body id="body">
   
-  <div class="frontmain" >
+  <div class="frontmain" id="frontmain" >
       <div class="update">
       
       
@@ -33,21 +33,14 @@
     </div>
     <p class="amazing">Water Park Where Everyone feel <span>Amazing!</span></p>
   </div>
-  <div class="gallery"  id="wave">
-    
-  </div>
   
       
-      
-    <div class="box zone">
-      <img class="toolbutton left" src="./images/prev.png" alt="">
-      <a href="./img/original/1.jpg" data-lightbox="mygallery"><img src="./img/original/1.jpg"></a>
-      <img class="toolbutton right
-      " src="./images/next.png" alt="">
-    </div>
+  <div class="video">
+    <video src="./img/video.mp4"  controls style="width: 96%; border-radius: 1.5rem; margin-left: 2%; margin-right: 2%;"></video>
+   </div>
     
 
-   <div class="about">
+   <div class="about" id="about">
     <h2 class="section-title">ABOUT US</h2>
     <img class="sectiontitleimage" src="./img/sectiontitle.svg" alt="">
     <div class="aboutdetails"><p>Varanasi Fun City is an excellent water recreation paradise which is appealing to people belonging to all age groups. Situated at the center of varanasi  on pandeypur-panchkosi road in heart of kashi.
@@ -58,33 +51,69 @@
         of giving thrill and challenge.</p></div>
     
    </div>
-   <div class="video">
-    <video src="./img/video.mp4" controls style="width: 100%;"></video>
-   </div>
+   
+      
+   <div class="box zone">
+    <img class="toolbutton left" src="./images/prev.png" alt="">
+    <a href="./img/original/1.jpg" data-lightbox="mygallery"><img src="./img/original/1.jpg"></a>
+    <img class="toolbutton right
+    " src="./images/next.png" alt="">
+  </div>
   <div class="info">
+    <img src="./img/poster1.svg" alt="" style="width: 22vmin;">
     <div class="timing">
       <div class="timingheader">
         <h1 class="timingtitle">Timing</h1>
         <img src="./img/watch-icon.png" width="40vmin" height="40vmin">
       </div>
       <div class="timingbody">
-        <h2 class="daytitle">Day</h2>
-        <img src="./img/day-icon.png" width="40vmin" height="40vmin">
-        <h3 class="daytime">11am-4pm</h3>
-        <h2 class="nighttitle">Night</h2>
-        <img src="./img/night-icon.png" width="40vmin" height="40vmin">
-        <h3 class="nighttime">6pm-8:30pm</h3>
+        <div class="day"><h2 class="daytitle">Day</h2>
+          <img src="./img/day-icon.png" width="40vmin" height="40vmin">
+          <h3 class="daytime">11am-4pm</h3></div>
+        <div class="night"><h2 class="nighttitle">Night</h2>
+          <img src="./img/night-icon.png" width="40vmin" height="40vmin">
+          <h3 class="nighttime">6pm-8:30pm</h3></div>
+        
       </div>
     </div>
-    
+    <img src="./img/poster2.svg" alt="" style="width: 22vmin;">
   </div>
   <div class="ticketnew">
-    <img src="./img/ticketcharges.svg" style="width: 100%;" alt="">
+    <div class="ticketnewimage"><img src="./img/ticketcharges.svg" style="width: 88%; margin: 6%;" alt=""></div>
   </div>
   <div class="otherchargesnew">
-    <img src="./img/othercharges.svg" style="width: 100%;" alt="">
+    <div class="otherchargesimage"><img src="./img/othercharges.svg" style="width: 92%; margin: 4%" alt=""></div>
+  
   </div>
-  <footer class="zone yellow">Copyright © Varanasi Fun City. All Rights Reserved. Designed & Developed By Ankur Maurya <h3>Website is in development currently.</h3></footer>
+  <div class="box zone">
+    <img class="toolbutton left" src="./images/prev.png" alt="">
+    <a href="./img/night2.jpg" data-lightbox="mygallery"><img src="./img/night2.jpg"></a>
+    <img class="toolbutton right
+    " src="./images/next.png" alt="">
+  </div>
+  <div class="testinomial">
+    <h2 class="section-title" style="margin-bottom: 0;"><span style="color: aqua;">HAPPY CUSTOMERS</span><br> TESTINOMIAL</h2><br>
+    <img src="./img/happy.svg" alt="" style="height: 20vmin; width: 20vmin; margin-top: 0; ">
+    <blockquote>I really love this place. It is great for having fun with friends or family. It is clean and green and has a fun filled aroma. This place serves as a very cool picnic spot.</blockquote>
+    <div class="client-img">
+      <img src="./img/testinomial.svg" class="img-responsive" alt="" style="margin-bottom: 0;">
+  </div>
+  <div class="details">
+      <h4 style="color: aqua; margin-bottom: 0;margin-top: 0;">Satyam Tiwari</h4>
+      <h5 style="margin-top: 0;">Varanasi.</h6>
+  </div>
+
+  </div>
+  <div class="googlemap">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <!-- prettier-ignore -->
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "beta"});</script>
+  </div>
+  <footer class="footer">Copyright © Varanasi Fun City. All Rights Reserved. Designed & Developed By Ankur Maurya <h3>Website is in development currently.</h3></footer>
 </div>
 
 <script type="text/javascript" src="./lightbox-plus-jquery.min.js"></script>
